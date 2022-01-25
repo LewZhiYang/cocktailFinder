@@ -11,5 +11,6 @@ function getCocktail (){
         
         (document.querySelector("img").src = data.strDrinkThumb,
         document.querySelector("h3").textContent = data.strInstructions,
-        document.querySelector("h2").textContent = data.strDrink));
+        document.querySelector("h2").textContent = data.strDrink))
+    .catch(error => alert(error))
 }
